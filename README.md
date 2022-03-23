@@ -1,2 +1,3 @@
 # Big Data
-A compendium of things I learnt regarding Big Data.
+
+Compendio de las cosas que voy aprendiendo sobre Big Data.
