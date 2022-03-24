@@ -135,7 +135,7 @@ Además es un método que distribuye y paraleliza las tareas a lo largo del clú
 
 Ejemplo: Contar palabras
 
-[Ejemplo Map Reduce](images/ejemplo-map-reduce.jpg)
+![Ejemplo Map Reduce](images/ejemplo-map-reduce.jpg)
 
 ---
 
