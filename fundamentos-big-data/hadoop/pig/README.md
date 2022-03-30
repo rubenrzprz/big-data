@@ -57,7 +57,7 @@ STORE allsales INTO '/tmp/report' USING PigStorage(';');
 |double|3.1415926535|
 |boolean|true|
 |datetime|2022-03-30T12:43:00.00+00:00|
-|chararray|Ruben|
+|chararray|Music|
 |bytearray||
 
 - Pig trata a los campos no identificados como arrays de bytes (bytearray en Pig).
@@ -75,14 +75,14 @@ allsales = LOAD 'sales.csv' USING PigStorage(',') AS (name:chararray, price:doub
 - Se pueden filtrar las tuplas que cumplan un determinado requisito mediante el comando ```FILTER```, permitiendo concatenar varias condiciones mediante ```AND``` y ```OR```.
 
 ```Pig Latin
-usgbbigsales = FILTER allsales BY price > 3000 AND (country == 'US' OR country == 'GB') 
+us_gb_big_sales = FILTER allsales BY price > 3000 AND (country == 'US' OR country == 'GB') 
 ```
 
 - Se pueden comparar todos los tipos de datos mediante el operador ```==```
 - También se pueden utilizar expresiones regualres de Java, mediante el operador ```MATCHES```
 
 ```Pig Latin
-gmail = FILTER  senders BY email_adddr MATCHES '.*@gmail\\.com$';
+gmail = FILTER senders BY email_adddr MATCHES '.*@gmail\\.com$';
 ```
 
 - Es posible extraer columnas mediante los operadores ```FOREACH``` y ```GENERATE```, generando nuevos campos, a los que se les puede definir un nombre y un tipo de datos.
@@ -100,7 +100,13 @@ unique_prices = DISTINCT t;
 - Con ```ORDER BY``` se pueden ordenar los registros de una tabla en orden ascendente (por defecto), o descendente indicando el operador ```DESC```.
 
 ```Pig Latin
-sortedsales = ORDER allsales BY country DESC;
+sorted_sales = ORDER allsales BY country DESC;
+```
+
+- Con los operadores ```IS NULL``` e ```IS NOT NULL```, se pueden filtrar los datos que sean nulos.
+
+```Pig Latin
+has_prices = FILTER allsales BY price IS NOT NULL;
 ```
 
 ### Funciones predefinidas
