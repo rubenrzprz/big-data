@@ -64,7 +64,7 @@ Queremos compilar el programa [Contando M&M](./learning-spark-2nd-edition/capitu
 
 Nos situamos en la carpeta donde se encuentra el fichero `build.sbt`, y lanzamos el comando `sbt clean package`.
 
-Nuestro archivo compilado se generará en `target/main-scala-capitulo2_2.12-1.0.jar`
+Nuestro archivo compilado se generará en `target/scala-2.12/main-scala-capitulo2_2.12-1.0.jar`
 
 Para ejecutarlo, llamamos al comando:
 
