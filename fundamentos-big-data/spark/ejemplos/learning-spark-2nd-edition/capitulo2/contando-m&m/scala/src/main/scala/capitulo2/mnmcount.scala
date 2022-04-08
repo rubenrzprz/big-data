@@ -73,7 +73,7 @@ object MnMcount {
         statsMnmColorDf.createOrReplaceTempView("stats_color")
         spark.table("stats_color").select("*").where(col("Color").isin("Orange", "Red")).show()
             
-        // Detenmos el SparkSession
+        // Detenemos el SparkSession
         spark.stop()
     }
 }
