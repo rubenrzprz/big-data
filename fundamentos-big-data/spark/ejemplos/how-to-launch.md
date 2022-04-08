@@ -1,5 +1,7 @@
 # Cómo lanzar los ejemplos
 
+Para esta guía tomamos como raíz siempre la carpeta `python` o `scala` de cada ejemplo.
+
 ## Python
 
 En Python no hace falta compilación, por lo que basta con lanzar el siguiente comando:
