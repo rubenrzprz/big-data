@@ -28,6 +28,9 @@ if __name__ == "__main__":
     .option("inferSchema", "true")
     .load(mnm_file))
 
+    # Persistimos el DF en memoria, ya que se accedera a el muchas veces
+    mnm_df.persist()
+
     # Usamos la API de DataFrames
     # 1. Selecionamos los campos "State", "Color" y "Count"
     # 2. Agrupamos por "State" y por "Color"

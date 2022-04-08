@@ -27,6 +27,9 @@ object MnMcount {
             .option("inferSchema", "true")
             .load(mnmFile)
         
+        // Persistimos el DF en memoria, ya que se accedera a el muchas veces
+        mnmDf.persist()
+
         // Usamos la API de DataFrames
         // 1. Selecionamos los campos "State", "Color" y "Count"
         // 2. Agrupamos por "State" y por "Color"

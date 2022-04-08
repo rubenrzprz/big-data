@@ -16,7 +16,8 @@ if __name__ == "__main__":
     # Obtenemos el nombre del fichero de datos de los argumentos de la linea de comandos
     quijote_file = sys.argv[1]
 
-    quijote_df = (spark.read.option("encoding", "UTF-8").text(quijote_file))
+    # Leemos el fichero y persistimos el DF que generamos
+    quijote_df = (spark.read.text(quijote_file))
     quijote_df.persist()
 
     # Mostrar numero de filas
