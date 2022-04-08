@@ -6,5 +6,5 @@ El siguiente programa lee un fichero con el formato de línea ```<state, mnm_col
 
 Para ejecutar el programa se necesita el siguiente [csv](https://github.com/databricks/LearningSparkV2/blob/master/chapter2/py/src/data/mnm_dataset.csv).
 
-- [Ejemplo en Python](python)
-- [Ejemplo en Scala](scala)
+- [Ejemplo en Python](python) - [Notebook](./mnm_notebook_py.ipynb)
+- [Ejemplo en Scala](scala) - [Notebook](./mnm_notebook_scala.ipynb)
