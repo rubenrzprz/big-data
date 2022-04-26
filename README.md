@@ -14,5 +14,5 @@ Compendio de las cosas que voy aprendiendo sobre Big Data.
      - [Sqoop](fundamentos-big-data/hadoop/sqoop/README.md)
      - [Flume](fundamentos-big-data/hadoop/flume/README.md)
    - Spark
-     - [Ejercicios/Ejemplos](spark/../fundamentos-big-data/spark/ejemplos/README.md)
+     - [Ejercicios/Ejemplos](spark/../fundamentos-big-data/spark/ejemplos/)
   
