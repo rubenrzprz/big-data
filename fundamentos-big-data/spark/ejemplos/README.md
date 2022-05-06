@@ -9,6 +9,8 @@ Los notebooks con los ejemplos se encuentran en el formato binario de Databricks
 
 Para esta guía tomamos como raíz siempre la carpeta `src` de cada ejemplo.
 
+---
+
 ### Python
 
 En Python no hace falta compilación, por lo que basta con lanzar el siguiente comando:
@@ -25,7 +27,7 @@ $SPARK_HOME/bin/spark-submit <ruta_fichero.py> [...parametros_adicionales]
 %SPARK_HOME%\bin\spark-submit <ruta_fichero.py> [...parámetros_adicionales]
 ```
 
-#### Ejemplo
+## Ejemplo
 
 Queremos lanzar el programa [Contando M&M](./learning-spark-2nd-edition/Python/capitulo2/el-quijote/src/elquijote.py).
 
@@ -44,6 +46,8 @@ $SPARK_HOME/bin/spark-submit mnmcount.py <ruta_fichero_mnm_dataset.csv>
 ```
 
 > El último parámetro es la ruta al dataset `mnm_dataset.csv'.
+
+---
 
 ### Scala
 
@@ -67,7 +71,7 @@ $SPARK_HOME/bin/spark-submit --class main.scala.<nombre_del_subpaquete>.<clase> 
 %SPARK_HOME%\bin\spark-submit --class main.scala.<nombre_del_subpaquete>.<clase> <ruta_al_fichero.jar> [...parámetros_adicionales]
 ```
 
-#### Ejemplo
+## Ejemplo
 
 Queremos compilar el programa [Contando M&M](./learning-spark-2nd-edition/Scala/capitulo2/contando-m&m/).
 
