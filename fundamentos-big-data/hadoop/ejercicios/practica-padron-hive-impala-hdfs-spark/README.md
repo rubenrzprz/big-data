@@ -2,13 +2,19 @@
 
 Partiendo del [CSV de datos de Padrón de Madrid](https://datos.madrid.es/egob/catalogo/200076-1-padron.csv), realizar los siguientes apartados:
 
-[1. Creación de tablas en formato texto](#1-creación-de-tablas-en-formato-texto)
-[2. Investigamos el formato columnar parquet](#2-investigamos-el-formato-columnar-parquet)
-[3. Juguemos con Impala](#3-juguemos-con-impala)
-[4. Sobre tablas particionadas](#4-sobre-tablas-particionadas)
-[5. Trabajando con tablas en HDFS.](#5-trabajando-con-tablas-en-hdfs)
-[6. Un poquito de Spark](#6-un-poquito-de-spark)
-[7. ¿Y si juntamos Spark y Hive?](#7-y-si-juntamos-spark-y-hive)
+- [Práctica Hive + Impala + HDFS + Spark](#práctica-hive--impala--hdfs--spark)
+  - [1. Creación de tablas en formato texto](#1-creación-de-tablas-en-formato-texto)
+  - [2. Investigamos el formato columnar parquet](#2-investigamos-el-formato-columnar-parquet)
+  - [3. Juguemos con Impala](#3-juguemos-con-impala)
+  - [4. Sobre tablas particionadas](#4-sobre-tablas-particionadas)
+  - [5. Trabajando con tablas en HDFS.](#5-trabajando-con-tablas-en-hdfs)
+  - [6. Un poquito de Spark](#6-un-poquito-de-spark)
+  - [7. ¿Y si juntamos Spark y Hive?](#7-y-si-juntamos-spark-y-hive)
+    - [Crear base de datos](#crear-base-de-datos)
+    - [Leer datos y crear tabla](#leer-datos-y-crear-tabla)
+    - [Consultas](#consultas)
+    - [Crear las tablas particionadas](#crear-las-tablas-particionadas)
+    - [Consultas sobre tablas particionadas](#consultas-sobre-tablas-particionadas)
 
 ## 1. Creación de tablas en formato texto
 
@@ -351,7 +357,7 @@ Texto|Parquet
 
 Sí, Impala es mucho más rápido que Hive a la hora de realizar consultas. En este caso, es entre 5 y 7 veces más rápido.
 
-### 4. Sobre tablas particionadas
+## 4. Sobre tablas particionadas
 
 1. Crear tabla (Hive) padron_particionado particionada por campos DESC_DISTRITO y DESC_BARRIO cuyos datos estén en formato parquet.
 
