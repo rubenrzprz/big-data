@@ -8,11 +8,11 @@ Compendio de las cosas que voy aprendiendo sobre Big Data.
        - [HDFS](fundamentos-big-data/hadoop/README.md#hdfs)
        - [MapReduce](fundamentos-big-data/hadoop/README.md#mapreduce)
        - [Ecosistema Hadoop](fundamentos-big-data/hadoop/README.md#ecosistema-hadoop)
-     - [Hive](fundamentos-big-data/hadoop/hive/README.md)
-     - [Impala](fundamentos-big-data/hadoop/impala/README.md)
-     - [Pig](fundamentos-big-data/hadoop/pig/README.md)
-     - [Sqoop](fundamentos-big-data/hadoop/sqoop/README.md)
-     - [Flume](fundamentos-big-data/hadoop/flume/README.md)
+     - [Hive](fundamentos-big-data/hadoop/teoria/hive/README.md)
+     - [Impala](fundamentos-big-data/hadoop/teoria/impala/README.md)
+     - [Pig](fundamentos-big-data/hadoop/teoria/pig/README.md)
+     - [Sqoop](fundamentos-big-data/hadoop/teoria/sqoop/README.md)
+     - [Flume](fundamentos-big-data/hadoop/teoria/flume/README.md)
+     - [Ejercicios](fundamentos-big-data/hadoop/ejercicios/)
    - Spark
      - [Ejercicios/Ejemplos](spark/../fundamentos-big-data/spark/ejemplos/)
-  
