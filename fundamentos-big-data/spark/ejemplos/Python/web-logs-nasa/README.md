@@ -1,10 +1,16 @@
 # Análisis de Web Logs de la NASA
 
-A partir de unos ficheros de logs en formato txt con el siguiente aspecto:
+Para este ejercicio emplearemos unos logs que podemos obtener a través de:
+```bash
+wget ftp://ita.ee.lbl.gov/traces/NASA_access_log_Jul95.gz
+wget ftp://ita.ee.lbl.gov/traces/NASA_access_log_Aug95.gz
+```
+
+Los logs presentan el siguiente aspecto:
 
 > 133.43.96.45 - - [01/Aug/1995:00:00:23 -0400] "GET /images/launch-logo.gif HTTP/1.0" 200 1713
 
-Leemos las líneas y extraemos los siguientes campos:
+Leemos sus líneas y extraemos los siguientes campos mediante una expresión regular:
 
 - **Host**: 133.43.96.45
 - **User_identifier**: -
@@ -16,4 +22,4 @@ Leemos las líneas y extraemos los siguientes campos:
 - **Http_status**: 200
 - **Content_size**: 1713
 
-Lo convertiremos a un DataFrame y lanzaremos consultas para extraer conclusiones.
+Posteriormente, lo convertiremos a un DataFrame y finalmente analizaremos sus datos mediante consultas.
