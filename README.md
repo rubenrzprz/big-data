@@ -15,4 +15,6 @@ Compendio de las cosas que voy aprendiendo sobre Big Data.
      - [Flume](fundamentos-big-data/hadoop/teoria/flume/README.md)
      - [Ejercicios](fundamentos-big-data/hadoop/ejercicios/)
    - Spark
-     - [Ejercicios/Ejemplos](spark/../fundamentos-big-data/spark/ejemplos/)
+     - [Ejercicios/Ejemplos](fundamentos-big-data/spark/ejemplos/)
+   - [Streaming](fundamentos-big-data/streaming/)
+     - [Apache Kafka](fundamentos-big-data/streaming/kafka/)
