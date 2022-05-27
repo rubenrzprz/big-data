@@ -18,3 +18,5 @@ Compendio de las cosas que voy aprendiendo sobre Big Data.
      - [Ejercicios/Ejemplos](fundamentos-big-data/spark/ejemplos/)
    - [Streaming](fundamentos-big-data/streaming/)
      - [Apache Kafka](fundamentos-big-data/streaming/kafka/)
+       - [Empezando con Kafka](fundamentos-big-data/streaming/kafka/guia-practica-kafka.md)
+       - [Presto + Kafka](fundamentos-big-data/streaming/kafka/presto%2Bkafka.md)
