@@ -36,3 +36,80 @@ Comenzaremos modificando el archivo ```core-site.xml```, que contiene la configu
     </property>
 </configuration>
 ```
+
+> Dentro de la etiqueta *value*, ```nodo1``` hace referencia al nombre de dominio de la máquina en la que estamos. Podríamos poner localhost, pero tendríamos que cambiarlo al migrar a un clúster real.
+
+Posteriormente, modificaremos el fichero ```hdfs-site.xml``` para que quede de la siguiente forma:
+
+```xml
+<configuration>
+    <property>
+        <name>dfs.replication</name>
+        <value>1</value>
+    </property>
+    <property>
+        <name>dfs.namenode.name.dir</name>
+        <value>/datos/namenode</value>
+    </property>
+    <property>
+        <name>dfs.namenode.data.dir</name>
+        <value>/datos/datanode</value>
+    </property>
+</configuration>
+```
+
+> Como solo tenemos 1 nodo, el factor de replicación será 1.
+>
+> También indicamos el directorio para los metadatos y el directorio para los datos.
+
+A continuación, crearemos los directorios para el namenode y el datanode, en las mismas rutas que especificamos en el fichero de configuración anterior:
+
+```sh
+mkdir /datos/namenode
+mkdir /datos/datanode
+```
+
+Y formateamos el sistema de ficheros que acabamos de crear:
+
+```sh
+hdfs namenode -format
+```
+
+Tras este comando, si todo está correcto, se nos debe haber creado un directorio *current* dentro de ```/datos/namenode```.
+
+```sh
+ls -l /datos/namenode
+```
+
+```log
+drwxrwxr-x. 2 hadoop hadoop 156 Jun  1 09:37 current
+```
+
+A continuación, arrancamos los procesos de HDFS con el siguiente comando, que pondrá en marcha el *NAMENODE*, el *SECONDARY NAMENODE* y el *DATANODE*.
+
+```sh
+start-dfs.sh
+```
+
+Comprobamos los procesos que se están ejecutando:
+
+```sh
+jps
+```
+
+```log
+4530 DataNode
+4709 SecondaryNameNode
+4842 Jps
+4381 NameNode
+```
+
+Por último, accedemos a la web de administración de Hadoop y comprobamos la información de los nodos:
+
+```www
+http://nodo1:50070
+```
+
+> En la versión 3 de Hadoop, el puerto es el 9870.
+
+![Panel de administración de Hadoop](./images/2-admin.png)

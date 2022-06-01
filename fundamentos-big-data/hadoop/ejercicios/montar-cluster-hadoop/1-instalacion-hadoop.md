@@ -118,7 +118,7 @@ Configuraremos las variables de entorno, una vez más, desde el fichero ```~/.ba
 
 ```sh
 export HADOOP_HOME=/opt/hadoop
-export PATH=$PATH:/$HADOOP_HOME/bin
+export PATH=$PATH:/$HADOOP_HOME/sbin
 export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
 ```
 
