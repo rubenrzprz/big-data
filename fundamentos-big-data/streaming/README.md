@@ -4,7 +4,7 @@
 
 El procesamiento de streams (o flujo de datos) es el acto de incoporar continuamente datos nuevos para calcular un resultado. Los datos de entrada son ilimitados y no tienen un inicio o final determinado.
 
-### Procesamiento en streaming vs procesamiento en batch
+## Procesamiento en streaming vs procesamiento en batch
 
 En el procesamiento por lotes (batch), el cálculo se ejecuta con un conjunto de datos de entrada fija y una única vez.
 
